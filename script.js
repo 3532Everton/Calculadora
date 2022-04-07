@@ -25,6 +25,7 @@ function adicionarNumero(num){
     } else if (resultadoObtido == false) {
         numeroNovo = segundoVisor.innerText + num
         segundoVisor.innerText = numeroNovo
+        resultadoObtido = true
     }
 }
 function operador(operador){
@@ -61,9 +62,9 @@ function prepararCalculo(){
     segundoVisor.innerText = ''
     segundoVisor.style = ''
 
-    visorResultado.style = 'height: 75%; padding: 10px;'
-
-    if (resultadoObtido == false){
+    
+    if (resultadoObtido == true){
+        visorResultado.style = 'height: 75%; padding: 10px;'
         calcular()
     }
 }
