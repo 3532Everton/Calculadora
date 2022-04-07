@@ -1,0 +1,106 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    box-sizing: border-box;
+    margin: 0 auto;
+    color: #fff;
+}
+html{
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    --tamanho-da-calculadora: 290px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    width: 100%;
+    height: 3em;
+    text-align: center;
+    font-size: 30pt;
+}
+div{
+    background: #3CB371;
+    min-height: 50px;
+    margin: 0;
+}
+.calculadora{
+    border-radius: 15px;
+}
+.visor{
+    border-radius: 15px;
+    margin: 0 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 7rem;
+    width: var(--tamanho-da-calculadora);
+    padding: 10px;
+    background: #6DE15A;
+}
+.visor div{width: 100%; margin: 0;}
+.visor-operacao{
+    height: 100%; 
+    border-radius: 15px; 
+    padding: 10px; 
+    text-align: right;
+    font-size: 20pt;
+}
+.visor2{
+    height: 0;
+    min-height: 0;
+    padding: 0;
+    border-radius: 0 0 15px 15px;
+}
+.visor-resultado{
+    height: auto;
+    min-height: auto;
+    border-radius: 0 0 15px 15px;
+    font-size: 20pt;
+    text-align: right;
+}
+.botoes{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 15px;
+    width: var(--tamanho-da-calculadora);
+}
+.botoes-numeros-tabela, .botoes-operadores-tabela{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+.tabela-linhas{
+    height: auto;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.tabela-cedula{
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    background: #6DE15A;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.botaoMaior{width: calc(50px * 2 + 4px);}
+.botaoIgual{justify-content: flex-start;}
+.botaoIgual div{margin-left: 5px;}
+.tabela-cedula:hover{
+    background: #A9F593;
+}

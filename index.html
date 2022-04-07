@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR" id='html'>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculadora</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <!-- Forma da caulculadora -->
+    <div class="calculadora">
+        <!-- visor -->
+        <div class="visor">
+            <div class="visor-operacao" id=primeiro-visor></div>
+            <div class="visor-operacao visor2" id=segundo-visor></div>
+            <div class="visor-resultado" id="resultado-visor"></div>
+        </div>
+        <div class="botoes">
+            <!-- numeros -->
+            <div class="botoes-numeros">
+                <div class="botoes-numeros-tabela">
+                    <div class="tabela-linhas">
+                        <button class="tabela-cedula" id="tecla07" onclick="numeroBnt(7)">7</button>
+                        <button class="tabela-cedula" id="tecla08" onclick="numeroBnt(8)">8</button>
+                        <button class="tabela-cedula" id="tecla09" onclick="numeroBnt(9)">9</button>
+                    </div>
+                    <div class="tabela-linhas">
+                        <button class="tabela-cedula" id="tecla04" onclick="numeroBnt(4)">4</button>
+                        <button class="tabela-cedula" id="tecla05" onclick="numeroBnt(5)">5</button>
+                        <button class="tabela-cedula" id="tecla06" onclick="numeroBnt(6)">6</button>
+                    </div>
+                    <div class="tabela-linhas">
+                        <button class="tabela-cedula" id="tecla01" onclick="numeroBnt(1)">1</button>
+                        <button class="tabela-cedula" id="tecla02" onclick="numeroBnt(2)">2</button>
+                        <button class="tabela-cedula" id="tecla03" onclick="numeroBnt(3)">3</button>
+                    </div>
+                    <div class="tabela-linhas">
+                        <button class="tabela-cedula botaoMaior" id="tecla0" onclick="numeroBnt(0)">0</button>
+                        <button class="tabela-cedula" id="tecla." onclick="numeroBnt('.')">.</button>
+                    </div>
+                </div>
+            </div>
+            <!-- operadores -->
+            <div class="botoes-operadores">
+                <div class="botoes-operadores-tabela">
+                    <div class="tabela-linhas">
+                        <button onclick="limpar()" class="tabela-cedula">AC</button>
+                        <button onclick="limpar()" class="tabela-cedula">&#8678;</button>
+                    </div>
+                    <div class="tabela-linhas">
+                        <button onclick="operador('+')" class="tabela-cedula">+</button>
+                        <button onclick="operador('-')" class="tabela-cedula">&minus;</button>
+                    </div>
+                    <div class="tabela-linhas">
+                        <button onclick="operador('/')" class="tabela-cedula">&divide;</button>
+                        <button onclick="operador('*')" class="tabela-cedula">&times;</button>
+                    </div>
+                    <div class="tabela-linhas botaoIgual">
+                        <button onclick="prepararCalculo()" class="tabela-cedula botaoMaior">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
