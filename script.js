@@ -70,18 +70,23 @@ function prepararCalculo(){
 }
 function calcular(){
     const visorResultado = document.getElementById('resultado-visor')
+    let resultado = 0
     switch(operadorLogico){
         case '+':
-            visorResultado.innerText = primeiroNumero+segundoNumero
+            resultado = primeiroNumero+segundoNumero
+            visorResultado.innerText = resultado
             break
         case '-':
-            visorResultado.innerText = primeiroNumero-segundoNumero
+            resultado = primeiroNumero-segundoNumero
+            visorResultado.innerText = resultado
             break
         case '/':
-            visorResultado.innerText = primeiroNumero/segundoNumero
+            resultado = primeiroNumero/segundoNumero
+            visorResultado.innerText = resultado.toFixed(2)
             break
         case '*':
-            visorResultado.innerText = primeiroNumero*segundoNumero
+            resultado = primeiroNumero*segundoNumero
+            visorResultado.innerText = resultado
             break
     }
     resultadoObtido = true
