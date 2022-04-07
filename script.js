@@ -89,7 +89,6 @@ function calcular(){
             visorResultado.innerText = resultado
             break
     }
-    resultadoObtido = true
 }
 
 function limpar(){
@@ -107,6 +106,7 @@ function limpar(){
     segundoNumero = ''
     primeiroNumeroSelecionado = false
     operadorLogico = ''
+    resultadoObtido = false
 }
 
 const teclasPermitidas = [
